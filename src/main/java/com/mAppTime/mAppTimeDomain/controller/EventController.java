@@ -36,7 +36,7 @@ public class EventController {
     public ResponseEntity<List<Event>> findEventsByOrder(){
         return new ResponseEntity<>(eventService.findEventsByOrder(),HttpStatus.OK);
     }
-    @PostMapping
+    @PostMapping("add")
     public ResponseEntity<Event> insertEvent(@RequestBody Event event){
         return new ResponseEntity<>(eventService.insertEvent(event),HttpStatus.CREATED);
     }
