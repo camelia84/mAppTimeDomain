@@ -9,7 +9,4 @@ import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User,Long> {
 
-    public Optional<User> findUserByid(Long id);
-
-    public List<User> findByOrderByFirstNameAsc();
 }

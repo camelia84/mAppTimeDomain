@@ -20,7 +20,7 @@ public class UserService {
         return userRepository.findAll();
     }
     public List<User> findUsersByName(){
-        return userRepository.findByOrderByFirstNameAsc();
+        return null;
     }
     public Optional<User> findUserById(Long id){
         return userRepository.findById(id);
